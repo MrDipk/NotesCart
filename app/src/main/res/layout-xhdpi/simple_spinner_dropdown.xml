@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CheckedTextView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@android:id/text1"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:ellipsize="marquee"
+    android:fontFamily="@font/poppins"
+    android:paddingLeft="56dp"
+    android:paddingTop="5dp"
+    android:paddingRight="30dp"
+    android:paddingBottom="5dp"
+    android:singleLine="true"
+    android:textColor="#BAB3B3"
+    app:layout_anchorGravity="center" />
+
+

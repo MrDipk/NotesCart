@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_my_subjects">
+
+    <fragment
+        android:id="@+id/nav_my_subjects"
+        android:name="com.dip.notescart.ui.fragment.My_Subjects"
+        android:label="@string/menu_my_Subjects"
+        tools:layout="@layout/fragment_my__subjects" >
+        <action
+            android:id="@+id/action_nav_my_subjects_to_nav_notes"
+            app:destination="@id/nav_notes" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/nav_notes"
+        android:name="com.dip.notescart.ui.fragment.Notes"
+        android:label="@string/menu_notes"
+        tools:layout="@layout/fragment_notes" >
+        <action
+            android:id="@+id/action_nav_notes_to_nav_question_paper"
+            app:destination="@id/nav_question_paper" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/nav_question_paper"
+        android:name="com.dip.notescart.ui.fragment.Question_Paper"
+        android:label="@string/menu_question_paper"
+        tools:layout="@layout/fragment_question__paper" >
+        <action
+            android:id="@+id/action_nav_question_paper_to_nav_lab_manual"
+            app:destination="@id/nav_lab_manual" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/nav_lab_manual"
+        android:name="com.dip.notescart.ui.fragment.Lab_Manual"
+        android:label="@string/menu_labmanual"
+        tools:layout="@layout/fragment_lab__manual" >
+        <action
+            android:id="@+id/action_nav_lab_manual_to_nav_ebooks"
+            app:destination="@id/nav_ebooks" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/nav_ebooks"
+        android:name="com.dip.notescart.ui.fragment.E_Books"
+        android:label="@string/e_books"
+        tools:layout="@layout/fragment_e__books" >
+        <action
+            android:id="@+id/action_nav_ebooks_to_nav_syllabus"
+            app:destination="@id/nav_syllabus" />
+    </fragment>
+    <fragment
+        android:id="@+id/nav_syllabus"
+        android:name="com.dip.notescart.ui.fragment.Syllbus"
+        android:label="@string/syllabus"
+        tools:layout="@layout/fragment_syllbus" >
+        <action
+            android:id="@+id/action_nav_syllabus_to_nav_contact_us"
+            app:destination="@id/nav_contact_us" />
+    </fragment>
+    <fragment
+        android:id="@+id/nav_contact_us"
+        android:name="com.dip.notescart.ui.fragment.Contact_Us"
+        android:label="@string/contact_us"
+        tools:layout="@layout/fragment_contact__us" >
+        <action
+            android:id="@+id/action_nav_contact_us_to_nav_about_us"
+            app:destination="@id/nav_about_us" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/nav_about_us"
+        android:name="com.dip.notescart.ui.fragment.About_Us"
+        android:label="@string/about_us"
+        tools:layout="@layout/fragment_about__us" />
+</navigation>
